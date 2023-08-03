@@ -1,0 +1,31 @@
+package testutils
+
+import "github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+
+func CreateFileReference(l1, c1, l2, c2 int) *models.FileReference {
+	return &models.FileReference{
+		StartRef: &models.FileLocation{
+			Line:   l1,
+			Column: c1,
+		},
+		EndRef: &models.FileLocation{
+			Line:   l2,
+			Column: c2,
+		},
+		IsAlias: false,
+	}
+}
+
+func CreateAliasFileReference(l1, c1, l2, c2 int, isAlias bool) *models.FileReference {
+	return &models.FileReference{
+		StartRef: &models.FileLocation{
+			Line:   l1,
+			Column: c1,
+		},
+		EndRef: &models.FileLocation{
+			Line:   l2,
+			Column: c2,
+		},
+		IsAlias: isAlias,
+	}
+}

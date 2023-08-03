@@ -1,0 +1,94 @@
+package handler
+
+import (
+	"fmt"
+
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers"
+	generalEnhancer "github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers/general"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders"
+	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
+	bitbucketModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket/models"
+	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
+	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers"
+)
+
+type Handler[T any] interface {
+	GetPlatform() models.Platform
+	GetLoader() loaders.Loader[T]
+	GetParser() parsers.Parser[T]
+	GetEnhancer() enhancers.Enhancer
+}
+
+func Handle(data []byte, platform models.Platform, credentials *models.Credentials, organization, baseUrl *string) (*models.Pipeline, error) {
+	var pipeline *models.Pipeline
+	var err error
+
+	if len(data) == 0 {
+		return nil, consts.NewErrEmptyData()
+	}
+
+	switch platform {
+	case consts.GitHubPlatform:
+		pipeline, err = handle[githubModels.Workflow](data, &GitHubHandler{}, credentials, organization, baseUrl, nil)
+	case consts.GitLabPlatform:
+		pipeline, err = handle[gitlabModels.GitlabCIConfiguration](data, &GitLabHandler{}, credentials, organization, baseUrl, nil)
+	case consts.AzurePlatform:
+		pipeline, err = handle[azureModels.Pipeline](data, &AzureHandler{}, credentials, organization, baseUrl, nil)
+	case consts.BitbucketPlatform:
+		pipeline, err = handle[bitbucketModels.Pipeline](data, &BitbucketHandler{}, credentials, organization, baseUrl, nil)
+	default:
+		return nil, consts.NewErrInvalidPlatform(platform)
+	}
+
+	if pipeline != nil {
+		pipeline.Platform = platform
+	}
+
+	if err != nil {
+		return nil, err
+	}
+
+	return pipeline, nil
+}
+
+func handle[T any](data []byte, handler Handler[T], credentials *models.Credentials, organization, baseUrl *string, parentPipeline *models.Pipeline) (*models.Pipeline, error) {
+	pipeline, err := handler.GetLoader().Load(data)
+	if err != nil {
+		return nil, err
+	}
+
+	parsedPipeline, err := handler.GetParser().Parse(pipeline)
+	if err != nil {
+		return nil, err
+	}
+
+	enhancer := handler.GetEnhancer()
+
+	parsedPipeline = enhancer.InheritParentPipelineData(parentPipeline, parsedPipeline)
+
+	importedPipelines, err := enhancer.LoadImportedPipelines(parsedPipeline, credentials, organization, baseUrl)
+	if err != nil {
+		fmt.Printf("Failed getting imported pipelines:\n%v", err)
+	}
+
+	for _, importedPipeline := range importedPipelines {
+		if importedPipeline == nil {
+			continue
+		}
+		parsedImportedPipeline, err := handle(importedPipeline.Data, handler, credentials, organization, baseUrl, parsedPipeline)
+		if err != nil {
+			fmt.Printf("Failed parsing imported pipeline for job %s - %v", importedPipeline.JobName, err)
+		}
+		importedPipeline.Pipeline = parsedImportedPipeline
+	}
+
+	enhancedPipeline, err := handler.GetEnhancer().Enhance(parsedPipeline, importedPipelines)
+	if err != nil {
+		fmt.Printf("Error while enhancing pipeline:\n%v", err)
+	}
+
+	return generalEnhancer.Enhance(enhancedPipeline, handler.GetPlatform())
+}

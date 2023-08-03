@@ -1,0 +1,31 @@
+package handler
+
+import (
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers"
+	azureEnhancer "github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers/azure"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders"
+	azureLoader "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure"
+	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers"
+	azureParser "github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/azure"
+)
+
+type AzureHandler struct{}
+
+func (g *AzureHandler) GetPlatform() models.Platform {
+	return consts.AzurePlatform
+}
+
+func (g *AzureHandler) GetLoader() loaders.Loader[azureModels.Pipeline] {
+	return &azureLoader.AzureLoader{}
+}
+
+func (g *AzureHandler) GetParser() parsers.Parser[azureModels.Pipeline] {
+	return &azureParser.AzureParser{}
+}
+
+func (g *AzureHandler) GetEnhancer() enhancers.Enhancer {
+	return &azureEnhancer.AzureEnhancer{}
+}

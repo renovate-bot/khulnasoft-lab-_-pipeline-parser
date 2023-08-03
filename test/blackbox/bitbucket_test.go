@@ -326,7 +326,7 @@ func TestBitbucket(t *testing.T) {
 						Name:          utils.GetPtr("master"),
 						Steps: []*models.Step{
 							{
-								Name: utils.GetPtr("Run Aqua scanner"),
+								Name: utils.GetPtr("Run KhulnaSoft scanner"),
 								Type: "shell",
 								Shell: &models.Shell{
 									Type:          utils.GetPtr("shell"),
