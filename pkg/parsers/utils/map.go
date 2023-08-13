@@ -1,8 +1,8 @@
 package utils
 
 import (
-	commonLoaderModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/common/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	commonLoaderModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/common/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 func ParseMapToParameters(mapNode commonLoaderModels.Map) []*models.Parameter {

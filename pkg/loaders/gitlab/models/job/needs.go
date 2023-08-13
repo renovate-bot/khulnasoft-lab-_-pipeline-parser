@@ -1,7 +1,7 @@
 package job
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
 	"gopkg.in/yaml.v3"
 )
 

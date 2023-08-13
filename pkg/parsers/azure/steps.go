@@ -3,12 +3,12 @@ package azure
 import (
 	"strings"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
-	loadersCommonModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/common/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	parserUtils "github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/utils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	azureModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/azure/models"
+	loadersCommonModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/common/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	parserUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 	"golang.org/x/exp/slices"
 )
 

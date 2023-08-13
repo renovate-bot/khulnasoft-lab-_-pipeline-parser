@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers/general/config"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/general/config"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 func TestEnhanceStep(t *testing.T) {

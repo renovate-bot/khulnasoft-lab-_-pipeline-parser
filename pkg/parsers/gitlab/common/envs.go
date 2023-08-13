@@ -1,8 +1,8 @@
 package common
 
 import (
-	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models/common"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models/common"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 func ParseEnvironmentVariables(environmentVariables *gitlabModels.EnvironmentVariablesRef) *models.EnvironmentVariablesRef {

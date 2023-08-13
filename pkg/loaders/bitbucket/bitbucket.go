@@ -1,7 +1,7 @@
 package bitbucket
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/bitbucket/models"
 	"gopkg.in/yaml.v3"
 )
 

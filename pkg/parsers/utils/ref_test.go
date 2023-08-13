@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 func TestDetectVersionType(t *testing.T) {

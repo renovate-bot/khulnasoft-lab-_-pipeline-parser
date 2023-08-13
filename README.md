@@ -1,11 +1,11 @@
 # Pipeline Parser
 
-[![Test Pipeline Parser](https://github.com/khulnasoft-labs/pipeline-parser/actions/workflows/test.yml/badge.svg)](https://github.com/khulnasoft-labs/pipeline-parser/actions/workflows/test.yml)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/khulnasoft-labs/pipeline-parser/blob/main/LICENSE)
-[![go-report-card][go-report-card]](https://goreportcard.com/report/github.com/khulnasoft-labs/pipeline-parser)
-![coverage report](https://img.shields.io/codecov/c/github/khulnasoft-labs/pipeline-parser)
+[![Test Pipeline Parser](https://github.com/khulnasoft-lab/pipeline-parser/actions/workflows/test.yml/badge.svg)](https://github.com/khulnasoft-lab/pipeline-parser/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/khulnasoft-lab/pipeline-parser/blob/main/LICENSE)
+[![go-report-card][go-report-card]](https://goreportcard.com/report/github.com/khulnasoft-lab/pipeline-parser)
+![coverage report](https://img.shields.io/codecov/c/github/khulnasoft-lab/pipeline-parser)
 
-[go-report-card]: https://goreportcard.com/badge/github.com/khulnasoft-labs/pipeline-parser
+[go-report-card]: https://goreportcard.com/badge/github.com/khulnasoft-lab/pipeline-parser
 
 ## Description
 
@@ -28,8 +28,8 @@ Pipeline Parser is Argon's solution for parsing and analyzing pipeline files of 
 import (
     "os"
 
-    "github.com/khulnasoft-labs/pipeline-parser/pkg/handler"
-    "github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
+    "github.com/khulnasoft-lab/pipeline-parser/pkg/handler"
+    "github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
 )
 
 // Read the pipeline data as bytes array

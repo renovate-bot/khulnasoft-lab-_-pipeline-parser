@@ -1,8 +1,8 @@
 package github
 
 import (
-	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	githubModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 func parseEnvironmentVariablesRef(envRef *githubModels.EnvironmentVariablesRef) *models.EnvironmentVariablesRef {

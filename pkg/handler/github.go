@@ -1,15 +1,15 @@
 package handler
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers"
-	githubEnhancer "github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers/github"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders"
-	githubLoader "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github"
-	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers"
-	githubParser "github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/github"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers"
+	githubEnhancer "github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/github"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders"
+	githubLoader "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github"
+	githubModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers"
+	githubParser "github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/github"
 )
 
 type GitHubHandler struct{}

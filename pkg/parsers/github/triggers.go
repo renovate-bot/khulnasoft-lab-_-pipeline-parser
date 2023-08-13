@@ -1,9 +1,9 @@
 package github
 
 import (
-	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	githubModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 const (

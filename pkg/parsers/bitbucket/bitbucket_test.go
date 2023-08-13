@@ -3,10 +3,10 @@ package bitbucket
 import (
 	"testing"
 
-	bbModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/testutils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	bbModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/bitbucket/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/testutils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 	"github.com/stretchr/testify/assert"
 )
 

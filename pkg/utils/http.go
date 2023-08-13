@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/imroc/req/v3"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 // ToDo: change to SetCommonBearerAuthToken and test

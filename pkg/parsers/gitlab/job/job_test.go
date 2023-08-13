@@ -3,12 +3,12 @@ package job
 import (
 	"testing"
 
-	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models/common"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models/job"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/testutils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models/common"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models/job"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/testutils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 	"github.com/stretchr/testify/assert"
 )
 

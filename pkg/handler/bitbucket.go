@@ -1,15 +1,15 @@
 package handler
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers"
-	bitbucketEnhancer "github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers/bitbucket"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders"
-	bitbucketLoader "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket"
-	bitbucketModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers"
-	bitbucketParser "github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/bitbucket"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers"
+	bitbucketEnhancer "github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/bitbucket"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders"
+	bitbucketLoader "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/bitbucket"
+	bitbucketModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/bitbucket/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers"
+	bitbucketParser "github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/bitbucket"
 )
 
 type BitbucketHandler struct{}

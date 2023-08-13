@@ -4,11 +4,11 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	parserUtils "github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/utils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	githubModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	parserUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 var (

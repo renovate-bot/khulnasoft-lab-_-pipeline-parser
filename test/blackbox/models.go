@@ -1,6 +1,6 @@
 package blackbox
 
-import "github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+import "github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 
 type TestCase struct {
 	Filename    string

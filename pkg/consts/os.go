@@ -1,6 +1,6 @@
 package consts
 
-import "github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+import "github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 
 const (
 	Macos1015     = "macos-10.15"

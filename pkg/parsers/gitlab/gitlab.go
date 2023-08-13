@@ -1,12 +1,12 @@
 package gitlab
 
 import (
-	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/gitlab/common"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/gitlab/job"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/gitlab/triggers"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/gitlab/common"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/gitlab/job"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/gitlab/triggers"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 type GitLabParser struct{}

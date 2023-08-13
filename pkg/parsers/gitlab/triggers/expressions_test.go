@@ -3,7 +3,7 @@ package triggers
 import (
 	"testing"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/testutils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/testutils"
 )
 
 func TestIsPositive(t *testing.T) {

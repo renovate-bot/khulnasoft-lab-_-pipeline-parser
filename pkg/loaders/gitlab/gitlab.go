@@ -1,7 +1,7 @@
 package gitlab
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models"
 	"gopkg.in/yaml.v3"
 )
 

@@ -1,10 +1,10 @@
 package common
 
 import (
-	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models/common"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	parsersUtils "github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/utils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models/common"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	parsersUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 func ParseRunner(image *gitlabModels.Image) *models.Runner {

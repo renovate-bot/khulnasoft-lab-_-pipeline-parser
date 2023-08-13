@@ -1,9 +1,9 @@
 package job
 
 import (
-	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 func parseDependencies(job *gitlabModels.Job) []*models.JobDependency {

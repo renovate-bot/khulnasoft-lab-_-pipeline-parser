@@ -3,9 +3,9 @@ package triggers
 import (
 	"fmt"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models/common"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models/common"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 const (

@@ -1,9 +1,9 @@
 package general
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers/general/config"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/general/config"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 func enhanceStep(step *models.Step, config *config.EnhancementConfiguration) *models.Step {

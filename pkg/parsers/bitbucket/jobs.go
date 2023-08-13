@@ -3,9 +3,9 @@ package bitbucket
 import (
 	"fmt"
 
-	bitbucketModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	bitbucketModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/bitbucket/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 func parseJobs(pipeline *bitbucketModels.Pipeline) []*models.Job {

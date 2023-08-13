@@ -3,8 +3,8 @@ package utils
 import (
 	"testing"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/testutils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/testutils"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,11 +3,11 @@ package job
 import (
 	"strconv"
 
-	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/gitlab/common"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers/gitlab/triggers"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/gitlab/common"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/gitlab/triggers"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 func ParseJobs(gitlabCIConfiguration *gitlabModels.GitlabCIConfiguration) ([]*models.Job, error) {

@@ -1,9 +1,9 @@
 package azure
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	azureModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/azure/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 func parseResources(resources *azureModels.Resources) *models.Resources {

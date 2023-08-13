@@ -3,9 +3,9 @@ package github
 import (
 	"testing"
 
-	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/testutils"
+	githubModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/testutils"
 )
 
 func TestParseEnvironmentVariablesRef(t *testing.T) {

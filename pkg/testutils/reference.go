@@ -1,6 +1,6 @@
 package testutils
 
-import "github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+import "github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 
 func CreateFileReference(l1, c1, l2, c2 int) *models.FileReference {
 	return &models.FileReference{

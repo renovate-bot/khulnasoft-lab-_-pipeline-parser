@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/khulnasoft-labs/pipeline-parser/pkg/models/pipeline",
+  "$id": "https://github.com/khulnasoft-lab/pipeline-parser/pkg/models/pipeline",
   "properties": {
     "id": {
       "type": "string"

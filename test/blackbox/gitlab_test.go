@@ -3,10 +3,10 @@ package blackbox
 import (
 	"testing"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/testutils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/testutils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 func TestGitLab(t *testing.T) {

@@ -1,9 +1,9 @@
 package job
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/utils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 	"gopkg.in/yaml.v3"
 )
 

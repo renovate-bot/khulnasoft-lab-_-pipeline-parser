@@ -3,7 +3,7 @@ package testutils
 import (
 	"sort"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 func SortParameters(params []models.Parameter) {

@@ -1,9 +1,9 @@
 package models
 
 import (
-	commonModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/common/models"
-	loadersUtils "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/utils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	commonModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/common/models"
+	loadersUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 	"gopkg.in/yaml.v3"
 )
 

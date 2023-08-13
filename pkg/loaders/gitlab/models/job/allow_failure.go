@@ -3,9 +3,9 @@ package job
 import (
 	"errors"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/utils"
-	commonUtils "github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/utils"
+	commonUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 	"gopkg.in/yaml.v3"
 )
 

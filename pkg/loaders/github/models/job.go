@@ -1,10 +1,10 @@
 package models
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	loadersUtils "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/utils"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	loadersUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/utils"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 	"gopkg.in/yaml.v3"
 )
 

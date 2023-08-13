@@ -3,9 +3,9 @@ package azure
 import (
 	"testing"
 
-	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/testutils"
+	azureModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/azure/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/testutils"
 )
 
 func TestParseVariables(t *testing.T) {

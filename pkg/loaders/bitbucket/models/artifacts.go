@@ -1,7 +1,7 @@
 package models
 
 import (
-	loadersUtils "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/utils"
+	loadersUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/utils"
 	"gopkg.in/yaml.v3"
 )
 

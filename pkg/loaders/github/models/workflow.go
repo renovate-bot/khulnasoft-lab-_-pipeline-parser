@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 type Container struct {

@@ -3,7 +3,7 @@ package utils
 import (
 	"regexp"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 var (

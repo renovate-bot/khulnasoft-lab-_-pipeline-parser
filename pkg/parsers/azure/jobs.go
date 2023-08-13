@@ -3,9 +3,9 @@ package azure
 import (
 	"strconv"
 
-	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/utils"
+	azureModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/azure/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
 )
 
 var (

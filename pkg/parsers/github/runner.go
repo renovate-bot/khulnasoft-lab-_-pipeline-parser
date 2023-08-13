@@ -1,9 +1,9 @@
 package github
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 
-	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
+	githubModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
 )
 
 func parseRunsOnToRunner(runsOn *githubModels.RunsOn) *models.Runner {

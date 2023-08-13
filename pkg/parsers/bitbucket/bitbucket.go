@@ -1,8 +1,8 @@
 package bitbucket
 
 import (
-	bitbucketModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	bitbucketModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/bitbucket/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 type BitbucketParser struct{}

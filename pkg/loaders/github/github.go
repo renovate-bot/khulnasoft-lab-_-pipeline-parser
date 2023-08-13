@@ -1,7 +1,7 @@
 package github
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
 	"gopkg.in/yaml.v3"
 )
 

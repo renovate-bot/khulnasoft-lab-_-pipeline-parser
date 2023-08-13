@@ -1,7 +1,7 @@
 package azure
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/azure/models"
 	"gopkg.in/yaml.v3"
 )
 

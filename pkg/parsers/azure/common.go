@@ -1,8 +1,8 @@
 package azure
 
 import (
-	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
+	azureModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/azure/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 )
 
 func parseEnvironmentVariablesRef(envRef *azureModels.EnvironmentVariablesRef) *models.EnvironmentVariablesRef {

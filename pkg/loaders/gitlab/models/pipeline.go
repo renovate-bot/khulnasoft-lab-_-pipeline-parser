@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models/common"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models/common"
 )
 
 type GitlabCIConfiguration struct {

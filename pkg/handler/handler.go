@@ -3,16 +3,16 @@ package handler
 import (
 	"fmt"
 
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/consts"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers"
-	generalEnhancer "github.com/khulnasoft-labs/pipeline-parser/pkg/enhancers/general"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/loaders"
-	azureModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/azure/models"
-	bitbucketModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/bitbucket/models"
-	githubModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/github/models"
-	gitlabModels "github.com/khulnasoft-labs/pipeline-parser/pkg/loaders/gitlab/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/models"
-	"github.com/khulnasoft-labs/pipeline-parser/pkg/parsers"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers"
+	generalEnhancer "github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/general"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/loaders"
+	azureModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/azure/models"
+	bitbucketModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/bitbucket/models"
+	githubModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/github/models"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/khulnasoft-lab/pipeline-parser/pkg/parsers"
 )
 
 type Handler[T any] interface {
