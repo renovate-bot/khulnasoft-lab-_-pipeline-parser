@@ -3,7 +3,7 @@ module github.com/khulnasoft-lab/pipeline-parser
 go 1.18
 
 require (
-	github.com/go-test/deep v1.0.8
+	github.com/go-test/deep v1.1.0
 	github.com/imroc/req/v3 v3.33.1
 	github.com/khulnasoft-lab/pipeline-parser v1.0.0
 	github.com/mitchellh/mapstructure v1.4.3
