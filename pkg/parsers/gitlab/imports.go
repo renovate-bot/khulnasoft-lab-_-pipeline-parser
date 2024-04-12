@@ -6,7 +6,7 @@ import (
 	"strings"
 
 	"github.com/khulnasoft-lab/pipeline-parser/pkg/consts"
-	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models"
+	gitlabModels "github.com/khulnasoft-lab/pipeline-parser/pkg/loaders/gitlab/models/common"
 	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
 	parserUtils "github.com/khulnasoft-lab/pipeline-parser/pkg/parsers/utils"
 	"github.com/khulnasoft-lab/pipeline-parser/pkg/utils"
@@ -20,7 +20,7 @@ var (
 	gitlabRemotePipelineRegex = regexp.MustCompile(`https://gitlab\.com/(?P<group>[\w-_]+)/(?P<project>.*?)/(?:-/)?raw/(?P<ref>.*?)/(?P<filePath>.*\.ya?ml)`)
 )
 
-func parseImports(include *gitlabModels.Include) []*models.Import {
+func ParseImports(include *gitlabModels.Include) []*models.Import {
 	if include == nil {
 		return nil
 	}

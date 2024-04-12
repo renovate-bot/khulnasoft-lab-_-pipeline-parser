@@ -54,8 +54,8 @@ func TestParseRunner(t *testing.T) {
 			},
 			expectedRunner: &models.Runner{
 				DockerMetadata: &models.DockerMetadata{
-					Image: utils.GetPtr("namespace/image"),
-					Label: utils.GetPtr("tag"),
+					Image:       utils.GetPtr("namespace/image"),
+					Label:       utils.GetPtr("tag"),
 				},
 				FileReference: testutils.CreateFileReference(1, 2, 3, 4),
 			},
@@ -68,8 +68,8 @@ func TestParseRunner(t *testing.T) {
 			},
 			expectedRunner: &models.Runner{
 				DockerMetadata: &models.DockerMetadata{
-					Image: utils.GetPtr("image"),
-					Label: utils.GetPtr("tag"),
+					Image:       utils.GetPtr("image"),
+					Label:       utils.GetPtr("tag"),
 				},
 				FileReference: testutils.CreateFileReference(1, 2, 3, 4),
 			},

@@ -16,5 +16,3 @@ __debug_bin
 vendor/
 .vscode/
 pipeline-parser
-.DS_Store
-*.DS_Store

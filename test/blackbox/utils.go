@@ -8,12 +8,12 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/go-test/deep"
 	azureEnhancer "github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/azure"
 	githubEnhancer "github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/github"
 	gitlabEnhancer "github.com/khulnasoft-lab/pipeline-parser/pkg/enhancers/gitlab"
 	"github.com/khulnasoft-lab/pipeline-parser/pkg/handler"
 	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/go-test/deep"
 )
 
 func readFile(filename string) []byte {

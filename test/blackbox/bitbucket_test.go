@@ -326,7 +326,7 @@ func TestBitbucket(t *testing.T) {
 						Name:          utils.GetPtr("master"),
 						Steps: []*models.Step{
 							{
-								Name: utils.GetPtr("Run KhulnaSoft scanner"),
+								Name: utils.GetPtr("Run Aqua scanner"),
 								Type: "shell",
 								Shell: &models.Shell{
 									Type:          utils.GetPtr("shell"),
@@ -335,7 +335,7 @@ func TestBitbucket(t *testing.T) {
 								},
 								Runner: &models.Runner{
 									DockerMetadata: &models.DockerMetadata{
-										Image: utils.GetPtr("khulnasoft/khulnasoft-scanner"),
+										Image: utils.GetPtr("aquasec/aqua-scanner"),
 									},
 								},
 								FileReference: testutils.CreateFileReference(4, 11, 8, 71),

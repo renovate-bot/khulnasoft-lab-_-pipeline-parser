@@ -7,8 +7,8 @@ import (
 )
 
 type CustomStepVariable struct {
-	Name          *string   `yaml:"name,omitempty"` // Name of a variable for the custom pipeline
-	Default       *string   `yaml:"default,omitempty"`
+	Name          *string  `yaml:"name,omitempty"` // Name of a variable for the custom pipeline
+	Default       *string  `yaml:"default,omitempty"`
 	AllowedValues []*string `yaml:"allowed-values,omitempty"`
 	FileReference *models.FileReference
 }

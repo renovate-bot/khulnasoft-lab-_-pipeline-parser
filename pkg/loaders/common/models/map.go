@@ -7,7 +7,7 @@ import (
 )
 
 /*
-Map is a struct that is used to describe a yaml tag that is a map of key value pairs.
+	Map is a struct that is used to describe a yaml tag that is a map of key value pairs.
 */
 type Map struct {
 	FileReference *models.FileReference

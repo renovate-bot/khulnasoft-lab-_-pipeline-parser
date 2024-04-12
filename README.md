@@ -9,7 +9,7 @@
 
 ## Description
 
-Pipeline Parser is Argon's solution for parsing and analyzing pipeline files of popular CI yaml files in order to create a generic pipeline entity that can be used across platforms.
+Pipeline Parser is KhulnaSoft's solution for parsing and analyzing pipeline files of popular CI yaml files in order to create a generic pipeline entity that can be used across platforms.
 
 #### Supported Platforms:
 

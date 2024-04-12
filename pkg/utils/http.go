@@ -3,8 +3,8 @@ package utils
 import (
 	"fmt"
 
-	"github.com/imroc/req/v3"
 	"github.com/khulnasoft-lab/pipeline-parser/pkg/models"
+	"github.com/imroc/req/v3"
 )
 
 // ToDo: change to SetCommonBearerAuthToken and test
