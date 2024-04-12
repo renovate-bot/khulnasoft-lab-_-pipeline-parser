@@ -4,20 +4,17 @@ on:
   pull_request:
 
 jobs:
-  build:
+  test:
     name: testing PR build
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      - uses: actions/setup-go@v3
+      - name: Install Go
+        uses: actions/setup-go@v2
         with:
-          stable: 'false'
-          go-version: '1.18'
-      - run: go version
+          go-version: 1.21
 
-      - name: Run tests
-        run: make test
+      - name: Execute Tests
+        run: make test-coverage
