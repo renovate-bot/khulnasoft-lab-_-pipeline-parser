@@ -1,6 +1,6 @@
 # Pipeline Parser
 
-[![Test Pipeline Parser](https://github.com/khulnasoft-lab/pipeline-parser/actions/workflows/test.yml/badge.svg)](https://github.com/khulnasoft-lab/pipeline-parser/actions/workflows/test.yml)
+[![Test Pipeline Parser](https://github.com/khulnasoft-lab/pipeline-parser/actions/workflows/pr.yml/badge.svg)](https://github.com/khulnasoft-lab/pipeline-parser/actions/workflows/pr.yml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/khulnasoft-lab/pipeline-parser/blob/main/LICENSE)
 [![go-report-card][go-report-card]](https://goreportcard.com/report/github.com/khulnasoft-lab/pipeline-parser)
 ![coverage report](https://img.shields.io/codecov/c/github/khulnasoft-lab/pipeline-parser)
